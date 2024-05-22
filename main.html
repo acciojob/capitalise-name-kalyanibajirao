@@ -6,6 +6,12 @@
     Enter your name: <input type="text" id="fname">
 	
 	<script type="text/javascript" src="./script.js">
+        const inputField = document.getElementById('fname');
+
+        inputField.addEventListener('blur', () => {
+            const uppercaseName = inputField.value.toUpperCase();
+            inputField.value = uppercaseName;
+        });
 	</script>
   </body>
 </html>

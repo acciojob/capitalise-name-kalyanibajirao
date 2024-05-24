@@ -3,15 +3,9 @@
   <head>
   </head>
   <body>
-    Enter your name: <input type="text" id="fname">
+    Enter Your Name: <input type="text" id="fname" placeholder="Enter your name" onblur="convertToUppercase()">
 	
 	<script type="text/javascript" src="./script.js">
-        const inputField = document.getElementById('fname');
-
-        inputField.addEventListener('blur', () => {
-            const uppercaseName = inputField.value.toUpperCase();
-            inputField.value = uppercaseName;
-        });
 	</script>
   </body>
 </html>
